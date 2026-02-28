@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean creation -->
+    <bean id="userDatabaseProvider" class="com.loose.coupling.UserDatabaseProvider" />
+    <bean id="userWebServiceProvider" class="com.loose.coupling.UserWebServiceProvider" />
+
+    <!-- Constructor based Dependency Injection  -->
+    <bean id="userDatabaseManager" class="com.loose.coupling.UserManager">
+        <!-- inject userDatabaseProvider bean using the CONSTRUCTOR BASED DI -->
+        <constructor-arg ref="userDatabaseProvider" />
+    </bean>
+    <bean id="userWebServiceManager" class="com.loose.coupling.UserManager">
+        <!-- inject userWebServiceProvider bean using the CONSTRUCTOR BASED DI  -->
+        <constructor-arg ref="userWebServiceProvider" />
+    </bean>
+</beans>
