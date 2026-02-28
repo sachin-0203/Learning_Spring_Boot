@@ -84,8 +84,8 @@ The application follows a layered architecture:
 This section is updated regularly to reflect completed topics.
 
 ### 🔹 Spring Core
-- [✅] Dependency Injection  
-- [✅] Inversion of Control (IoC)  
+- [x] Dependency Injection  
+- [x] Inversion of Control (IoC)  
 - [ ] Bean Lifecycle  
 - [ ] AOP (Aspect-Oriented Programming)  
 
