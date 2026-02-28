@@ -9,12 +9,14 @@
     <bean id="userWebServiceProvider" class="com.loose.coupling.UserWebServiceProvider" />
 
     <!-- Constructor based Dependency Injection  -->
-    <bean id="userDatabaseManager" class="com.loose.coupling.UserManager">
-        <!-- inject userDatabaseProvider bean using the CONSTRUCTOR BASED DI -->
+
+    <bean id="userManagerWithUserDatabaseProvider" class="com.loose.coupling.UserManager">
+        <!-- inject userDatabaseProvider bean  -->
         <constructor-arg ref="userDatabaseProvider" />
     </bean>
-    <bean id="userWebServiceManager" class="com.loose.coupling.UserManager">
-        <!-- inject userWebServiceProvider bean using the CONSTRUCTOR BASED DI  -->
+
+    <bean id="userManagerWithUserWebService" class="com.loose.coupling.UserManager">
+        <!-- inject userWebServiceProvider bean  -->
         <constructor-arg ref="userWebServiceProvider" />
     </bean>
 </beans>
