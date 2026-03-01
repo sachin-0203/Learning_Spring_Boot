@@ -86,7 +86,8 @@ This section is updated regularly to reflect completed topics.
 ### 🔹 Spring Core
 - [x] Dependency Injection  
 - [x] Inversion of Control (IoC)  
-- [x] Bean Lifecycle  
+- [x] Bean Lifecycle
+- [ ] Autowire -> byName, byType, constructor 
 - [ ] AOP (Aspect-Oriented Programming)  
 
 ### 🔹 Spring Boot
