@@ -1,0 +1,14 @@
+package com.example.autowire.name;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+     static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("autowireByName.xml");
+
+        com.example.autowire.name.Car myCar = (Car) context.getBean("myCar");
+        myCar.displayDetails();
+     }
+
+}
