@@ -1,6 +1,5 @@
-package com.example.componantScan;
+package com.example.autowired.annotation;
 
-import org.springframework.aot.generate.Generated;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
